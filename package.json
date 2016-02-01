@@ -1,0 +1,14 @@
+{
+  "name": "chadthecoder",
+  "version": "0.0.1",
+  "description": "The personal portfolio site for Chad Christensen",
+  "main": "index.js",
+  "directories": {
+    "doc": "doc"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Chad Christensen",
+  "license": "ISC"
+}
