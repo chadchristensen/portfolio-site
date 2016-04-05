@@ -1,0 +1,14 @@
+{
+  "name": "chadthecoder_new",
+  "version": "1.0.0",
+  "description": "Chad Christensen's Personal Website",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Chad Christensen",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  }
+}
