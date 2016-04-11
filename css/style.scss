@@ -1,4 +1,59 @@
-@import 'bourbon/bourbon'
-@import 'grid-settings'
-@import 'neat/neat'
-@import 'colors'
+@import 'bourbon/bourbon';
+@import 'neat/neat';
+@import 'colors';
+@import 'nav';
+@import 'hero';
+
+body {
+  background-color: $bg;
+  color: $dark-gray;
+
+  header {
+    background-color: $secondary;
+    color: $bg;
+    text-transform: uppercase;
+    a {
+      color: $bg;
+    }
+  } // End of header
+  section {
+    @include outer-container;
+    text-align: center;
+    padding: 25px;
+    h3 {
+      text-transform: uppercase;
+    }
+  }
+  .secondary-bg {
+    color: $bg;
+    background-color: $primary;
+  }
+  #skills {
+    img, p {
+      @include span-columns(2);
+      height: 74px;
+      margin-bottom: 50px;
+    }
+    .first {
+      @include shift(1);
+    }
+  }
+
+  #contact {
+    li {
+      list-style: none;
+    }
+  }
+  .social-link {
+    min-width: 80px;
+    background-color: $social-link;
+    padding: 10px;
+    text-decoration: none;
+    color: $bg;
+    border-radius: 4px;
+    transition: all .3s;
+    &:hover {
+      background-color: darken($social-link, 15%);
+    }
+  }
+} // End of body

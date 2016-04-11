@@ -12,7 +12,7 @@
 
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/style.css">
-        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+        <script src="./js/modernizr-2.8.3.min.js"></script>
     </head>
     <body>
         <!--[if lt IE 8]>
@@ -20,76 +20,101 @@
         <![endif]-->
 
         <!-- Add your site or application content here -->
-        <header>
-            <nav>
-                <a href="#"><img src="logo.png" alt="Chad Christensen's Logo"></a>
-                <ul id="main-nav">
-                    <li><a href="">Home</a></li>
-                    <li><a href="">About</a></li>
-                    <li><a href="">Skills</a></li>
-                    <li><a href="">Projects</a></li>
-                    <li><a href="">Contact</a></li>
-                </ul>
-            </nav>
-            <div class="hero">
-                <img src="" alt="" class="headshot">
+        <header class="navigation" role="banner">
+            <div class="navigation-wrapper">
+                <a href="/" class="logo"><img src="img/Logo.svg" alt="Chad Christensen's Logo"></a>
+                <a href="javascript:void(0)" class="navigation-menu-button" id="js-mobile-menu">MENU</a>
+                <nav role="navigation">
+                    <ul id="js-navigation-menu" class="navigation-menu show">
+                        <li class="nav-link"><a href="">Home</a></li>
+                        <li class="nav-link"><a href="#about">About</a></li>
+                        <li class="nav-link"><a href="#skills">Skills</a></li>
+                        <li class="nav-link"><a href="#projects">Projects</a></li>
+                        <li class="nav-link"><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <div class="hero">
+            <div class="hero-inner">
+                <img src="img/chadprofile.png" alt="" class="headshot">
                 <h1 class="name">Chad Christensen</h1>
                 <h2>Full-Stack Web Developer</h2>
             </div>
-        </header>
+        </div>
+
 
         <section>
             <h3>About Me</h3>
             <p>Hello world! This is HTML5 Boilerplate.</p>
         </section>
-        <section>
-            <h3>Skills</h3>
-            <img src="img/html5.svg" alt="">
-            <img src="img/css3.svg" alt="">
-            <img src="img/javascript.svg" alt="">
-            <img src="img/jquery.svg" alt="">
-            <img src="img/angularjs.svg" alt="">
-            <img src="img/sass.svg" alt="">
-            <img src="img/bootstrap.svg" alt="">
-            <img src="img/gulp.svg" alt="">
-            <img src="img/ruby.svg" alt="">
-            <img src="img/rails.svg" alt="">
-            <img src="img/mongodb.svg" alt="">
-            <img src="img/postgresql.svg" alt="">
-            <img src="img/nodejs.svg" alt="">
-            <img src="img/amazonwebservices.svg" alt="">
-        </section>
-        <section>
+        <div class="secondary-bg">
+            <section id="skills">
+                <h3>Skills</h3>
+                <img src="img/html5.svg" alt="" class="first">
+                <img src="img/css3.svg" alt="">
+                <img src="img/javascript.svg" alt="">
+                <img src="img/jquery.svg" alt="">
+                <img src="img/angularjs.svg" alt="">
+                <img src="img/sass.svg" alt="" class="first">
+                <img src="img/bootstrap.svg" alt="">
+                <img src="img/gulp.svg" alt="">
+                <img src="img/ruby.svg" alt="">
+                <img src="img/rails.svg" alt="">
+                <img src="img/mongodb.svg" alt="" class="first">
+                <img src="img/postgresql.svg" alt="">
+                <img src="img/nodejs.svg" alt="">
+                <img src="img/amazonwebservices.svg" alt="">
+                <p>More skills coming soon!</p>
+            </section>
+        </div>
+        <section id="projects">
             <h3>Projects</h3>
             <div class="project">
-                <h4>Project Title</h4>
+                <h4>MeBooks</h4>
+                <a href="" class="social-link demo">Demo</a>
+                <a href="" class="social-link github">GitHub</a>
+                <img src="" alt="">
+                <p><span>Tech Used:</span> HTML, CSS, JavaScript, AngularJS, MongoDB, Node.js</p>
+            </div>
+            <div class="project">
+                <h4>Giftr</h4>
                 <a href="" class="social-link demo">Demo</a>
                 <a href="" class="social-link github">GitHub</a>
                 <img src="" alt="">
                 <p><span>Tech Used:</span> HTML, CSS, JavaScript</p>
             </div>
             <div class="project">
-                <h4>Project Title</h4>
+                <h4>Beats App</h4>
+                <a href="" class="social-link demo">Demo</a>
+                <a href="" class="social-link github">GitHub</a>
+                <img src="" alt="">
+                <p><span>Tech Used:</span> HTML, CSS, JavaScript</p>
+            </div>
+            <div class="project">
+                <h4>Wheel of WDI</h4>
                 <a href="" class="social-link demo">Demo</a>
                 <a href="" class="social-link github">GitHub</a>
                 <img src="" alt="">
                 <p><span>Tech Used:</span> HTML, CSS, JavaScript</p>
             </div>
         </section>
-        <section>
-            <h3>Contact</h3>
-            <form action="">
-                Name<input type="text">
-                Email<input type="email">
-                Message <textarea name="" id="" cols="30" rows="10"></textarea>
-            </form>
-        </section>
+        <div class="secondary-bg">
+            <section id="contact">
+                <h3>Contact Me</h3>
+                <ul>
+                    <li>Email Me</li>
+                    <li>Connect With Me</li>
+                    <li>Tweet Me</li>
+                    <li></li>
+                </ul>
+            </section>
+        </div>
 
 
         <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
-        <script src="js/plugins.js"></script>
-        <script src="js/main.js"></script>
+        <script src="js/app.min.js"></script>
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
