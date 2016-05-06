@@ -3,3 +3,7 @@ $secondary: #517F7F;
 $bg: #F5F5F5;
 $dark-gray: #5C5C5C;
 $social-link: #898989;
+
+$medium: new-breakpoint(max-width 1030px 12);
+$small: new-breakpoint(max-width 376px 4);
+$sm-md: new-breakpoint(max-width 560px 4);

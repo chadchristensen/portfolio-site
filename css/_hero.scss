@@ -1,3 +1,4 @@
+@import 'colors';
 .hero {
   $base-border-radius: 3px !default;
   $action-color: #477DCA !default;
@@ -6,19 +7,25 @@
   $hero-background-bottom: #20392B;
   $hero-color: $bg;
   $gradient-angle: 10deg;
-  $hero-image: '../img/herobg.png';
+  $hero-image: '../img/herobg.jpg';
 
   @include background(url($hero-image), linear-gradient($gradient-angle, $hero-background-bottom, $hero-background-top), no-repeat $hero-background-top scroll);
   background-color: rgba(0,0,0,.5);
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
-  padding-bottom: 3em;
+  padding: 2.7em 0;
   color: $hero-color;
   text-transform: uppercase;
+  @include media($medium) {
+    padding: 2em 0;
+  }
+  @include media($small) {
+    padding: 0;
+  }
 
   .hero-logo img {
-    height: 3em;
+    height: 3 em;
     margin-bottom: 1em;
   }
 
@@ -28,7 +35,19 @@
     margin: auto;
     padding: 2.5em;
     text-align: center;
-
+    @include media($small) {
+      padding: 20px;
+    }
+    .name {
+      @include media($small) {
+        font-size: 1.4em;
+      }
+    }
+    .job-title {
+      @include media($small) {
+        font-size: 1.1em;
+      }
+    }
     .hero-copy {
       text-align: center;
 

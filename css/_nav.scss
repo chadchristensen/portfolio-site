@@ -103,8 +103,10 @@ header.navigation {
     display: block;
     line-height: $navigation-height;
     overflow: hidden;
-    padding-right: 0.8em;
-    text-align: right;
+    // padding-right: 0.8em;
+    padding: 0 .4em;
+    // text-align: right;
+    text-align: center;
     width: 100%;
     z-index: 9999;
 
@@ -122,7 +124,8 @@ header.navigation {
       text-decoration: none;
 
       @include media ($horizontal-bar-mode) {
-        padding-right: 1em;
+        // padding-right: 1em;
+        padding: 0 .5em;
       }
 
       &:focus,
