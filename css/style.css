@@ -421,6 +421,14 @@ body {
           margin-right: 10px; }
         body #projects .project .project-links .social-link:hover {
           background-color: #636363; }
+        body #projects .project .project-links .social-link img {
+          margin-right: 7px;
+          width: 20px;
+          height: 20px;
+          margin-bottom: -4px; }
+          @media screen and (max-width: 1030px) {
+            body #projects .project .project-links .social-link img {
+              display: none; } }
         @media screen and (max-width: 560px) {
           body #projects .project .project-links .social-link {
             min-width: 60px;
@@ -434,18 +442,20 @@ body {
       border: 1px solid gainsboro; }
       body #projects .project img.project-screenshot:last-child {
         margin-right: 0; }
-    body #projects .project .project-tech {
+    body #projects .project .project-info {
       float: left;
       display: block;
       margin-right: 2.35765%;
       width: 100%;
       text-align: left;
       font-size: .9em;
-      margin-top: 20px; }
-      body #projects .project .project-tech:last-child {
+      margin-top: 10px;
+      line-height: 1.1em; }
+      body #projects .project .project-info:last-child {
         margin-right: 0; }
-      body #projects .project .project-tech span {
+      body #projects .project .project-info span {
         font-weight: bold;
+        font-size: 1.1em;
         margin-right: 5px; }
   body #contact ul {
     padding: 0;
