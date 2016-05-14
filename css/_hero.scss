@@ -33,6 +33,7 @@
     @include outer-container;
     @include clearfix;
     margin: auto;
+    margin-top: 50px;
     padding: 2.5em;
     text-align: center;
     @include media($small) {

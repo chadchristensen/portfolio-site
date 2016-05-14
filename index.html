@@ -26,11 +26,10 @@
                 <a href="javascript:void(0)" class="navigation-menu-button" id="js-mobile-menu">MENU</a>
                 <nav role="navigation">
                     <ul id="js-navigation-menu" class="navigation-menu show">
-                        <li class="nav-link"><a href="">Home</a></li>
-                        <li class="nav-link"><a href="#about">About</a></li>
-                        <li class="nav-link"><a href="#skills">Skills</a></li>
-                        <li class="nav-link"><a href="#projects">Projects</a></li>
-                        <li class="nav-link"><a href="#contact">Contact</a></li>
+                        <li class="nav-link"><a data-scroll href="#about">About</a></li>
+                        <li class="nav-link"><a data-scroll href="#skills">Skills</a></li>
+                        <li class="nav-link"><a data-scroll href="#projects">Projects</a></li>
+                        <li class="nav-link"><a data-scroll href="#contact">Contact</a></li>
                     </ul>
                 </nav>
             </div>
@@ -155,8 +154,13 @@
 
         <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
+        <script src="js/smooth-scroll.min.js"></script>
         <script src="js/app.min.js"></script>
-
+        <script>
+            smoothScroll.init({
+                offset: 45
+            });
+        </script>
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
           (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
