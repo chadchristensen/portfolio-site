@@ -395,6 +395,29 @@ body {
         padding: 5px 15px; }
         body #projects .project:last-child {
           margin-right: 0; } }
+    body #projects .project .project-type {
+      float: left;
+      display: block;
+      margin-right: 4.82916%;
+      width: 100%;
+      text-align: left;
+      margin: 0; }
+      body #projects .project .project-type:last-child {
+        margin-right: 0; }
+      body #projects .project .project-type span {
+        background-color: #565656;
+        color: #CECECE;
+        border: 1px solid #515151;
+        text-transform: uppercase;
+        font-size: 14px;
+        padding: 5px 8px;
+        border-radius: 2px; }
+        body #projects .project .project-type span img {
+          margin-right: 5px; }
+      @media screen and (max-width: 560px) {
+        body #projects .project .project-type {
+          margin-top: 10px;
+          margin-bottom: -10px; } }
     body #projects .project .project-title {
       float: left;
       display: block;
@@ -481,6 +504,8 @@ body {
       body #projects .project .project-info:last-child {
         margin-right: 0; }
       body #projects .project .project-info span {
+        display: inline-block;
+        width: 95px;
         font-weight: bold;
         font-size: 1.1em;
         margin-right: 5px; }
