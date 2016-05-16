@@ -337,7 +337,8 @@ body {
         color: #F5F5F5;
         padding: 10px 15px;
         text-decoration: none;
-        transition: all .2s; }
+        transition: all .2s;
+        border-radius: 3px; }
         body #about .about .resume img {
           display: inline-block;
           width: 24px;
@@ -508,10 +509,79 @@ body {
         margin-right: 0; }
       body #projects .project .project-info span {
         display: inline-block;
-        width: 95px;
         font-weight: bold;
         font-size: 1.1em;
         margin-right: 5px; }
+      body #projects .project .project-info p > span {
+        margin-bottom: 8px; }
+      body #projects .project .project-info .project-tech ul.techtags {
+        color: #F5F5F5;
+        padding: 0;
+        margin-top: 8px; }
+        body #projects .project .project-info .project-tech ul.techtags li {
+          display: inline-block;
+          list-style: none;
+          padding: 3px 5px;
+          font-size: 10px;
+          font-weight: bold;
+          border-radius: 1px; }
+          body #projects .project .project-info .project-tech ul.techtags li::before {
+            background-size: 11px 11px;
+            display: inline-block;
+            margin-right: 3px;
+            margin-bottom: -2px;
+            width: 11px;
+            height: 11px;
+            content: ""; }
+        body #projects .project .project-info .project-tech ul.techtags .html {
+          background-color: #E24E30; }
+          body #projects .project .project-info .project-tech ul.techtags .html::before {
+            background-image: url("../img/html5.svg"); }
+        body #projects .project .project-info .project-tech ul.techtags .css {
+          background-color: #1E73B4; }
+          body #projects .project .project-info .project-tech ul.techtags .css::before {
+            background-image: url("../img/css3.svg"); }
+        body #projects .project .project-info .project-tech ul.techtags .js {
+          background-color: #2D2E2A; }
+          body #projects .project .project-info .project-tech ul.techtags .js::before {
+            background-image: url("../img/javascriptdark.svg"); }
+        body #projects .project .project-info .project-tech ul.techtags .jquery {
+          background-color: #226096; }
+          body #projects .project .project-info .project-tech ul.techtags .jquery::before {
+            background-image: url("../img/jquery.svg"); }
+        body #projects .project .project-info .project-tech ul.techtags .angular {
+          background-color: #B3443E; }
+          body #projects .project .project-info .project-tech ul.techtags .angular::before {
+            background-image: url("../img/angularjs.svg"); }
+        body #projects .project .project-info .project-tech ul.techtags .mongo {
+          background-color: #448F47; }
+          body #projects .project .project-info .project-tech ul.techtags .mongo::before {
+            background-image: url("../img/mongodb.svg"); }
+        body #projects .project .project-info .project-tech ul.techtags .node {
+          background-color: #80BB4A; }
+          body #projects .project .project-info .project-tech ul.techtags .node::before {
+            background-image: url("../img/nodejs.svg"); }
+        body #projects .project .project-info .project-tech ul.techtags .ruby {
+          background-color: #C32730; }
+          body #projects .project .project-info .project-tech ul.techtags .ruby::before {
+            background-image: url("../img/ruby.svg"); }
+        body #projects .project .project-info .project-tech ul.techtags .rails {
+          background-color: #942E43; }
+          body #projects .project .project-info .project-tech ul.techtags .rails::before {
+            background-image: url("../img/rails.svg"); }
+        body #projects .project .project-info .project-tech ul.techtags .postgresql {
+          background-color: #376080; }
+          body #projects .project .project-info .project-tech ul.techtags .postgresql::before {
+            background-image: url("../img/postgresql.svg"); }
+        body #projects .project .project-info .project-tech ul.techtags .express {
+          background-color: #cfcfcf; }
+          body #projects .project .project-info .project-tech ul.techtags .express::before {
+            background-size: 0 0;
+            width: 0;
+            height: 0;
+            content: ""; }
+        body #projects .project .project-info .project-tech ul.techtags li.dark {
+          color: #2D2E2A; }
   body #contact ul {
     padding: 0;
     margin-bottom: 50px; }

@@ -3,13 +3,20 @@ $secondary: #517F7F;
 $bg: #F5F5F5;
 $dark-gray: #5C5C5C;
 $social-link: #898989;
-$html: ;
-$css: ;
-$javascript: ;
-$ruby: ;
-$pg: ;
-$mongo: ;
-$angular: ;
+
+// Tech tags
+$html: #E24E30;
+$css: #1E73B4;
+// $javascript: #EAD75E;
+$javascript: #2D2E2A;
+$express: darken($bg, 15%);
+$ruby: #C32730;
+$rails: #942E43;
+$jquery: #226096;
+$pg: #376080;
+$mongo: #448F47;
+$angular: #B3443E;
+$node: #80BB4A;
 
 $medium: new-breakpoint(max-width 1030px 12);
 $small: new-breakpoint(max-width 376px 4);

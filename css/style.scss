@@ -81,6 +81,7 @@ body {
         padding: 10px 15px;
         text-decoration: none;
         transition: all .2s;
+        border-radius: 3px;
         img {
           display: inline-block;
           width: 24px;
@@ -217,10 +218,109 @@ body {
         line-height: 1.1em;
         span {
           display: inline-block;
-          width: 95px;
           font-weight: bold;
           font-size: 1.1em;
           margin-right: 5px;
+        }
+        p > span {
+          margin-bottom: 8px;
+        }
+        .project-tech {
+          ul.techtags {
+            color: $bg;
+            padding: 0;
+            margin-top: 8px;
+            li {
+              display: inline-block;
+              list-style: none;
+              padding: 3px 5px;
+              font-size: 10px;
+              font-weight: bold;
+              // letter-spacing: 1px;
+              border-radius: 1px;
+              &::before {
+                background-size: 11px 11px;
+                display: inline-block;
+                margin-right: 3px;
+                margin-bottom: -2px;
+                width: 11px;
+                height: 11px;
+                content: "";
+              }
+            }
+            .html {
+              background-color: $html;
+              &::before {
+                background-image: url('../img/html5.svg');
+              }
+            }
+            .css {
+              background-color: $css;
+              &::before {
+                background-image: url('../img/css3.svg');
+              }
+            }
+            .js {
+              background-color: $javascript;
+              &::before {
+                background-image: url('../img/javascriptdark.svg');
+              }
+            }
+            .jquery {
+              background-color: $jquery;
+              &::before {
+                background-image: url('../img/jquery.svg');
+              }
+            }
+            .angular {
+              background-color: $angular;
+              &::before {
+                background-image: url('../img/angularjs.svg');
+              }
+            }
+            .mongo {
+              background-color: $mongo;
+              &::before {
+                background-image: url('../img/mongodb.svg');
+              }
+            }
+            .node {
+              background-color: $node;
+              &::before {
+                background-image: url('../img/nodejs.svg');
+              }
+            }
+            .ruby {
+              background-color: $ruby;
+              &::before {
+                background-image: url('../img/ruby.svg');
+              }
+            }
+            .rails {
+              background-color: $rails;
+              &::before {
+                background-image: url('../img/rails.svg');
+              }
+            }
+            .postgresql {
+              background-color: $pg;
+              &::before {
+                background-image: url('../img/postgresql.svg');
+              }
+            }
+            .express {
+              background-color: $express;
+              &::before {
+                background-size: 0 0;
+                width: 0;
+                height: 0;
+                content: "";
+              }
+            }
+            li.dark {
+              color: #2D2E2A;
+            }
+          } // End of ul.techtags
         }
       } // End of .project-info
     }
