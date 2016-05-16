@@ -311,37 +311,39 @@ body {
     background-color: #78BEBD; }
     body .secondary-bg h3.section-title {
       color: #F5F5F5; }
-  body #about .about {
-    font-size: 22px;
-    padding: 0 5%;
-    text-align: left;
-    line-height: 32px; }
-    body #about .about span {
-      font-size: 28px; }
-    body #about .about #learning {
-      font-weight: bold;
-      font-size: 25px; }
-    @media screen and (max-width: 560px) {
-      body #about .about {
-        font-size: 18px; }
-        body #about .about #learning {
+  body #about {
+    padding-bottom: 50px; }
+    body #about .about {
+      font-size: 22px;
+      padding: 0 5%;
+      text-align: left;
+      line-height: 32px; }
+      body #about .about span {
+        font-size: 28px; }
+      body #about .about #learning {
+        font-weight: bold;
+        font-size: 25px; }
+      @media screen and (max-width: 560px) {
+        body #about .about {
           font-size: 18px; }
-        body #about .about span {
-          font-size: 20px; } }
-    body #about .about #resume {
-      font-weight: bold; }
-    body #about .about .resume {
-      background-color: #517F7F;
-      color: #F5F5F5;
-      padding: 10px 15px;
-      text-decoration: none;
-      transition: all .2s; }
-      body #about .about .resume img {
-        display: inline-block;
-        width: 24px;
-        margin-bottom: -7px; }
-      body #about .about .resume:hover {
-        background-color: #3d6060; }
+          body #about .about #learning {
+            font-size: 18px; }
+          body #about .about span {
+            font-size: 20px; } }
+      body #about .about #resume {
+        font-weight: bold; }
+      body #about .about .resume {
+        background-color: #517F7F;
+        color: #F5F5F5;
+        padding: 10px 15px;
+        text-decoration: none;
+        transition: all .2s; }
+        body #about .about .resume img {
+          display: inline-block;
+          width: 24px;
+          margin-bottom: -7px; }
+        body #about .about .resume:hover {
+          background-color: #3d6060; }
   body #skills img, body #skills p {
     float: left;
     display: block;
@@ -367,6 +369,7 @@ body {
     margin-right: 2.35765%;
     width: 48.82117%;
     background-color: #e8e8e8;
+    border: 1px solid #e6e6e6;
     padding: 20px 25px;
     margin-bottom: 50px;
     border-radius: 5px; }
@@ -405,9 +408,9 @@ body {
       body #projects .project .project-type:last-child {
         margin-right: 0; }
       body #projects .project .project-type span {
-        background-color: #565656;
-        color: #CECECE;
-        border: 1px solid #515151;
+        background-color: #78BEBD;
+        color: #F5F5F5;
+        border: 1px solid #71bbba;
         text-transform: uppercase;
         font-size: 14px;
         padding: 5px 8px;
