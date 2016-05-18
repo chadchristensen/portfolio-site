@@ -23,6 +23,9 @@ header.navigation {
   min-height: $navigation-height;
   width: 100%;
   z-index: 999;
+  @media (max-width: 376px) {
+    margin-top: -50px;
+  }
 
   .navigation-wrapper {
     @include clearfix;

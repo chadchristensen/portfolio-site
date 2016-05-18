@@ -12,6 +12,9 @@ header.navigation {
   min-height: 60px;
   width: 100%;
   z-index: 999; }
+  @media (max-width: 376px) {
+    header.navigation {
+      margin-top: -50px; } }
   header.navigation .navigation-wrapper {
     max-width: 1200px;
     margin-left: auto;
@@ -524,7 +527,8 @@ body {
           padding: 3px 5px;
           font-size: 10px;
           font-weight: bold;
-          border-radius: 1px; }
+          border-radius: 1px;
+          margin-bottom: 5px; }
           body #projects .project .project-info .project-tech ul.techtags li::before {
             background-size: 11px 11px;
             display: inline-block;
@@ -608,6 +612,7 @@ body {
           body #contact ul li:nth-child(2n+1) {
             clear: left; } }
       body #contact ul li a {
+        position: relative;
         display: inline-block;
         text-decoration: none;
         color: #F5F5F5;
