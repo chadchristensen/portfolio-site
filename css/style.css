@@ -326,10 +326,33 @@ header.navigation {
 
 .contact-links .icon {
   color: #F5F5F5;
-  box-shadow: 0 0 0 3px #F5F5F5;
-  -webkit-transition: color 0.3s;
-  -moz-transition: color 0.3s;
-  transition: color 0.3s; }
+  box-shadow: 0 0 0 5px #F5F5F5;
+  -webkit-transition: color 0.2s;
+  -moz-transition: color 0.2s;
+  transition: color 0.2s; }
+
+.contact-links .icon:after {
+  top: -2px;
+  left: -2px;
+  padding: 2px;
+  z-index: -1;
+  background: #78BEBD;
+  -webkit-transition: -webkit-transform 0.2s, opacity 0.2s;
+  -moz-transition: -moz-transform 0.2s, opacity 0.2s;
+  transition: transform 0.2s, opacity 0.2s; }
+
+.contact-links .icon:hover:after {
+  -webkit-transform: scale(0);
+  -moz-transform: scale(0);
+  -ms-transform: scale(0);
+  transform: scale(0);
+  opacity: 0;
+  -webkit-transition: -webkit-transform 0.4s, opacity 0.2s;
+  -moz-transition: -moz-transform 0.4s, opacity 0.2s;
+  transition: transform 0.4s, opacity 0.2s; }
+
+.contact-links .icon:hover {
+  color: #fff; }
 
 body {
   background-color: #F5F5F5;
