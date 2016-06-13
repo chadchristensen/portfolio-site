@@ -10,6 +10,7 @@
   $hero-image: '../img/herobg.jpg';
 
   @include background(url($hero-image), linear-gradient($gradient-angle, $hero-background-bottom, $hero-background-top), no-repeat $hero-background-top scroll);
+  height: 100vh;
   background-color: rgba(0,0,0,.5);
   background-position: top;
   background-repeat: no-repeat;
@@ -25,7 +26,7 @@
   }
 
   .hero-logo img {
-    height: 3 em;
+    height: 10em;
     margin-bottom: 1em;
   }
 
@@ -35,9 +36,13 @@
     margin: auto;
     margin-top: 50px;
     padding: 2.5em;
+    padding-top: 6em;
     text-align: center;
     @include media($small) {
       padding: 20px;
+    }
+    img {
+      height: 11em;
     }
     .name {
       @include media($small) {

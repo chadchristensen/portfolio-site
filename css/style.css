@@ -218,6 +218,7 @@ header.navigation {
 .hero {
   background: url("../img/herobg.jpg"), -webkit-linear-gradient(-280deg, #20392B, #7F99BE), no-repeat;
   background: url("../img/herobg.jpg"), linear-gradient(10deg, #20392B, #7F99BE), no-repeat;
+  height: 100vh;
   background-color: rgba(0, 0, 0, 0.5);
   background-position: top;
   background-repeat: no-repeat;
@@ -232,7 +233,7 @@ header.navigation {
     .hero {
       padding: 0; } }
   .hero .hero-logo img {
-    height: 3 em;
+    height: 10em;
     margin-bottom: 1em; }
   .hero .hero-inner {
     max-width: 1200px;
@@ -241,6 +242,7 @@ header.navigation {
     margin: auto;
     margin-top: 50px;
     padding: 2.5em;
+    padding-top: 6em;
     text-align: center; }
     .hero .hero-inner::after {
       clear: both;
@@ -253,6 +255,8 @@ header.navigation {
     @media screen and (max-width: 376px) {
       .hero .hero-inner {
         padding: 20px; } }
+    .hero .hero-inner img {
+      height: 11em; }
     @media screen and (max-width: 376px) {
       .hero .hero-inner .name {
         font-size: 1.4em; } }
