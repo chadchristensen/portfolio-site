@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="no-js" lang="en" ng-app>
+<html class="no-js" lang="" ng-app="myApp">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -12,6 +12,7 @@
 
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/style.css">
+
         <script src="./js/modernizr-2.8.3.min.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
     </head>
@@ -55,7 +56,7 @@
                 <p class="about">Besides tech, my other passion is music and I love
                 finding ways to combine the two (Web Audio API anyone?).
 
-                <p class="about"><span id="learning">Currently Learning:</span> GulpJS, JS testing (Mocha and Chai).</p>
+                <p class="about"><span id="learning">Currently Learning:</span> JavaScript Promises, Design Patterns</p>
                 <p class="about"><span id="resume">Resume:</span> <a target="_blank" class="resume" href="./chad_christensen_resume.pdf"><img src="./img/document_icon.png" alt="Document Icon"> PDF</a> <a class="resume" href="./chad_christensen_resume.doc"><img src="./img/document_icon.png" alt="Document Icon"> DOC</a></p>
             </section>
             <div class="secondary-bg">
@@ -79,102 +80,24 @@
                     <p>More skills coming soon!</p>
                 </section>
             </div>
-            <section id="projects">
+            <section id="projects" ng-controller="projectsCtrl">
                 <h3 class="section-title">Projects</h3>
                 <div class="heading-underline-dark"></div>
-                <div class="project">
-                    <p class="project-type"><span><img src="img/individual.svg" alt="Individual Project">Individual</span></p>
-                    <p class="project-title">MeBooks</p>
+                <div class="project" ng-repeat="project in projectList">
+                    <p class="project-type"><span><img ng-src="img/{{project.type}}.svg" alt="{{project.type + Project}}">{{project.type}}</span></p>
+                    <p class="project-title">{{project.name}}</p>
                     <div class="project-links">
-                        <a href="https://mebooks.herokuapp.com" target="_blank" class="social-link demo"><img src="img/monitor.svg" alt="Desktop icon">Demo</a>
-                        <a href="https://github.com/chadchristensen/mebooks" target="_blank" class="social-link github"><img src="img/github.svg" alt="GitHub icon">GitHub</a>
+                        <a href="{{project.demoLink}}" target="_blank" class="social-link demo"><img src="img/monitor.svg" alt="Desktop icon">Demo</a>
+                        <a href="{{project.githubLink}}" target="_blank" class="social-link github"><img src="img/github.svg" alt="GitHub icon">GitHub</a>
                     </div>
-                    <img class="project-screenshot" src="img/mebooks_screenshot.jpg" alt="Screenshot of MeBooks App">
+                    <img class="project-screenshot" ng-src="{{project.screenshot}}" alt="Screenshot of MeBooks App">
                     <div class="project-info">
-                        <p class="description"><span>Description:</span><br> A MEAN stack app that allows children to create different characters</p>
-                        <p class="role"><span>Role:</span><br> Front-end, Back-end</p>
+                        <p class="description"><span>Description:</span><br>{{project.description}}</p>
+                        <p class="role"><span>Role:</span><br>{{project.role}}</p>
                         <div class="project-tech">
                             <span>Built With:</span>
                             <ul class="techtags">
-                                <li class="html">HTML5</li>
-                                <li class="css">CSS3</li>
-                                <li class="js">JavaScript</li>
-                                <li class="angular">AngularJS</li>
-                                <li class="mongo">MongoDB</li>
-                                <li class="express dark">Express</li>
-                                <li class="node">Node.js</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="project">
-                    <p class="project-type"><span><img src="img/team.svg" alt="Team Project">Team</span></p>
-                    <p class="project-title">Giftr</p>
-                    <div class="project-links">
-                        <a href="https://app-giftr.herokuapp.com" target="_blank" class="social-link demo"><img src="img/monitor.svg" alt="Desktop icon">Demo</a>
-                        <a href="https://github.com/tiptoptrio/giftr" target="_blank" class="social-link github"><img src="img/github.svg" alt="GitHub icon">GitHub</a>
-                    </div>
-                    <img class="project-screenshot" src="img/giftr_screenshot.jpg" alt="Screenshot of the Giftr App">
-                    <div class="project-info">
-                        <p class="description"><span>Description:</span><br> A gift recommendation app</p>
-                        <p class="role"><span>Role:</span><br> Front-end</p>
-                        <div class="project-tech">
-                            <span>Built With:</span>
-                            <ul class="techtags">
-                                <li class="html">HTML</li>
-                                <li class="css">CSS</li>
-                                <li class="js">JavaScript</li>
-                                <li class="mongo">MongoDB</li>
-                                <li class="dark express">Express</li>
-                                <li class="node">Node.js</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="project">
-                    <p class="project-type"><span><img src="img/individual.svg" alt="Individual Project">Individual</span></p>
-                    <p class="project-title">Top Tracks</p>
-                    <div class="project-links">
-                        <a href="https://toptracks.herokuapp.com" target="_blank" class="social-link demo"><img src="img/monitor.svg" alt="Desktop icon">Demo</a>
-                        <a href="https://github.com/chadchristensen/beats_app" target="_blank" class="social-link github"><img src="img/github.svg" alt="GitHub icon">GitHub</a>
-                    </div>
-                    <img class="project-screenshot" src="img/toptracks_screenshot.jpg" alt="Screenshot of TopTracks App">
-                    <div class="project-info">
-                        <p class="description"><span>Description:</span><br> An application that allows music producers to showcase their funky fresh beats</p>
-                        <p class="role"><span>Role:</span><br> Front-end, Back-end</p>
-                        <div class="project-tech">
-                            <span>Built With:</span>
-                            <ul class="techtags">
-                                <li class="html">HTML</li>
-                                <li class="css">CSS</li>
-                                <li class="js">JavaScript</li>
-                                <li class="jquery">jQuery</li>
-                                <li class="ruby">Ruby</li>
-                                <li class="rails">Ruby on Rails</li>
-                                <li class="postgresql">PostgreSQL</li>
-                            </ul>
-
-                        </div>
-                    </div>
-                </div>
-                <div class="project">
-                    <p class="project-type"><span><img src="img/individual.svg" alt="Individual Project">Individual</span></p>
-                    <p class="project-title">Wheel of WDI</p>
-                    <div class="project-links">
-                        <a href="http://wheel-of-wdi.bitballoon.com" target="_blank" class="social-link demo"><img src="img/monitor.svg" alt="Desktop icon">Demo</a>
-                        <a href="https://github.com/chadchristensen/wheel_of_wdi" target="_blank" class="social-link github"><img src="img/github.svg" alt="GitHub icon">GitHub</a>
-                    </div>
-                    <img class="project-screenshot" src="img/wheelofwdi_screenshot.jpg" alt="Screenshot of Wheel of WDI project">
-                    <div class="project-info">
-                        <p class="description"><span>Description:</span><br> An adaptation of the game show Wheel of Fortune with programming twist</p>
-                        <p class="role"><span>Role:</span><br> Front-end, Back-end</p>
-                        <div class="project-tech">
-                            <span>Built With:</span>
-                            <ul class="techtags">
-                                <li class="html">HTML5</li>
-                                <li class="css">CSS3</li>
-                                <li class="js">JavaScript</li>
-                                <li class="jquery">jQuery</li>
+                                <li ng-repeat="tech in project.techUsed" class="{{tech}}"></li>
                             </ul>
                         </div>
                     </div>
@@ -194,11 +117,11 @@
             </div>
         </div>
 
-
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
         <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
         <script src="js/smooth-scroll.min.js"></script>
-        <script src="js/app.min.js"></script>
+        <script src="js/app.js"></script>
         <script>
             smoothScroll.init({
                 offset: 45,

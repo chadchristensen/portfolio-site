@@ -240,6 +240,7 @@ body {
               // letter-spacing: 1px;
               border-radius: 1px;
               margin-bottom: 5px;
+              margin-right: 3px;
               &::before {
                 background-size: 11px 11px;
                 display: inline-block;
@@ -255,11 +256,17 @@ body {
               &::before {
                 background-image: url('../img/html5.svg');
               }
+              &::after {
+                content: "HTML5"
+              }
             }
             .css {
               background-color: $css;
               &::before {
                 background-image: url('../img/css3.svg');
+              }
+              &::after {
+                content: "CSS3"
               }
             }
             .js {
@@ -267,11 +274,17 @@ body {
               &::before {
                 background-image: url('../img/javascriptdark.svg');
               }
+              &::after {
+                content: "JavaScript"
+              }
             }
             .jquery {
               background-color: $jquery;
               &::before {
                 background-image: url('../img/jquery.svg');
+              }
+              &::after {
+                content: "jQuery"
               }
             }
             .angular {
@@ -279,11 +292,17 @@ body {
               &::before {
                 background-image: url('../img/angularjs.svg');
               }
+              &::after {
+                content: "AngularJS"
+              }
             }
             .mongo {
               background-color: $mongo;
               &::before {
                 background-image: url('../img/mongodb.svg');
+              }
+              &::after {
+                content: "MongoDB"
               }
             }
             .node {
@@ -291,11 +310,17 @@ body {
               &::before {
                 background-image: url('../img/nodejs.svg');
               }
+              &::after {
+                content: "Node.js"
+              }
             }
             .ruby {
               background-color: $ruby;
               &::before {
                 background-image: url('../img/ruby.svg');
+              }
+              &::after {
+                content: "Ruby"
               }
             }
             .rails {
@@ -303,11 +328,17 @@ body {
               &::before {
                 background-image: url('../img/rails.svg');
               }
+              &::after {
+                content: "Ruby on Rails"
+              }
             }
             .postgresql {
               background-color: $pg;
               &::before {
                 background-image: url('../img/postgresql.svg');
+              }
+              &::after {
+                content: "PostgreSQL"
               }
             }
             .express {
@@ -317,6 +348,9 @@ body {
                 width: 0;
                 height: 0;
                 content: "";
+              }
+              &::after {
+                content: "Express"
               }
             }
             li.dark {
