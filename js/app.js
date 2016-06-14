@@ -2,6 +2,16 @@
 angular.module('myApp', []).controller('projectsCtrl', function ($scope) {
   $scope.projectList = [
     {
+      name: 'Client Website',
+      type: 'Individual',
+      demoLink: 'http://www.pecatl.com',
+      screenshot: 'img/pec_screenshot.jpg',
+      alt: 'Screenshot of Wheel of WDI app',
+      description: 'A full-site, responsive redesign that added "Get A Quote" and "Contact" pages',
+      role: 'Front-end, Back-end',
+      techUsed: ['html', 'css', 'js', 'jquery', 'php']
+    },
+    {
       name: 'MeBooks',
       type: 'Individual',
       demoLink: 'https://app-giftr.herokuapp.com',
@@ -23,17 +33,17 @@ angular.module('myApp', []).controller('projectsCtrl', function ($scope) {
       role: 'Front-end',
       techUsed: ['html', 'css', 'js', 'mongo', 'dark express', 'node']
     },
-    {
-      name: 'Top Tracks',
-      type: 'Individual',
-      demoLink: 'https://toptracks.herokuapp.com',
-      githubLink: 'https://github.com/chadchristensen/beats_app',
-      screenshot: 'img/toptracks_screenshot.jpg',
-      alt: 'Screenshot of Top Tracks app',
-      description: 'An application that allows music producers to showcase their funky fresh beats',
-      role: 'Front-end, Back-end',
-      techUsed: ['html', 'css', 'js', 'jquery', 'ruby', 'rails', 'postgresql']
-    },
+    // {
+    //   name: 'Top Tracks',
+    //   type: 'Individual',
+    //   demoLink: 'https://toptracks.herokuapp.com',
+    //   githubLink: 'https://github.com/chadchristensen/beats_app',
+    //   screenshot: 'img/toptracks_screenshot.jpg',
+    //   alt: 'Screenshot of Top Tracks app',
+    //   description: 'An application that allows music producers to showcase their funky fresh beats',
+    //   role: 'Front-end, Back-end',
+    //   techUsed: ['html', 'css', 'js', 'jquery', 'ruby', 'rails', 'postgresql']
+    // },
     {
       name: 'Wheel of WDI',
       type: 'Individual',

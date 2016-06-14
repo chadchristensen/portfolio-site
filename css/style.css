@@ -621,6 +621,7 @@ body {
           margin-right: 3px; }
           body #projects .project .project-info .project-tech ul.techtags li::before {
             background-size: 11px 11px;
+            background-repeat: no-repeat;
             display: inline-block;
             margin-right: 3px;
             margin-bottom: -2px;
@@ -687,6 +688,18 @@ body {
             background-image: url("../img/postgresql.svg"); }
           body #projects .project .project-info .project-tech ul.techtags .postgresql::after {
             content: "PostgreSQL"; }
+        body #projects .project .project-info .project-tech ul.techtags .php {
+          background-color: #fff;
+          padding-top: 0;
+          color: #5C5C5C; }
+          body #projects .project .project-info .project-tech ul.techtags .php::before {
+            background-size: 20px 20px;
+            width: 20px;
+            height: 20px;
+            margin-bottom: -6.5px;
+            background-image: url("../img/php-plain.svg"); }
+          body #projects .project .project-info .project-tech ul.techtags .php::after {
+            content: "PHP"; }
         body #projects .project .project-info .project-tech ul.techtags .express {
           background-color: #cfcfcf; }
           body #projects .project .project-info .project-tech ul.techtags .express::before {
@@ -697,17 +710,19 @@ body {
           body #projects .project .project-info .project-tech ul.techtags .express::after {
             content: "Express"; }
         body #projects .project .project-info .project-tech ul.techtags li.dark {
-          color: #2D2E2A; }
+          color: #5C5C5C; }
   body #contact ul {
-    margin-bottom: 50px; }
+    padding-top: 80px;
+    padding-left: 0;
+    margin-bottom: 75px;
+    height: 272px; }
     body #contact ul li {
-      padding: 65px 0;
       list-style: none;
+      margin-bottom: 50px;
       float: left;
       display: block;
       margin-right: 2.35765%;
-      width: 23.23176%;
-      margin-bottom: 50px; }
+      width: 23.23176%; }
       body #contact ul li:last-child {
         margin-right: 0; }
       @media screen and (max-width: 560px) {

@@ -17,6 +17,7 @@ $pg: #376080;
 $mongo: #448F47;
 $angular: #B3443E;
 $node: #80BB4A;
+$php: lighten($dark-gray, 25%);
 
 $medium: new-breakpoint(max-width 1030px 12);
 $small: new-breakpoint(max-width 376px 4);

@@ -80,15 +80,15 @@
                     <p>More skills coming soon!</p>
                 </section>
             </div>
-            <section id="projects" ng-controller="projectsCtrl">
+            <section id="projects" ng-controller="projectsCtrl" ng-cloak>
                 <h3 class="section-title">Projects</h3>
                 <div class="heading-underline-dark"></div>
                 <div class="project" ng-repeat="project in projectList">
                     <p class="project-type"><span><img ng-src="img/{{project.type}}.svg" alt="{{project.type + Project}}">{{project.type}}</span></p>
                     <p class="project-title">{{project.name}}</p>
                     <div class="project-links">
-                        <a href="{{project.demoLink}}" target="_blank" class="social-link demo"><img src="img/monitor.svg" alt="Desktop icon">Demo</a>
-                        <a href="{{project.githubLink}}" target="_blank" class="social-link github"><img src="img/github.svg" alt="GitHub icon">GitHub</a>
+                        <a href="{{project.demoLink}}" ng-show="{{project.demoLink}}" target="_blank" class="social-link demo"><img src="img/monitor.svg" alt="Desktop icon">Demo</a>
+                        <a href="{{project.githubLink}}" ng-show="{{project.githubLink}}" target="_blank" class="social-link github"><img src="img/github.svg" alt="GitHub icon">GitHub</a>
                     </div>
                     <img class="project-screenshot" ng-src="{{project.screenshot}}" alt="Screenshot of MeBooks App">
                     <div class="project-info">
@@ -116,8 +116,6 @@
                 </section>
             </div>
         </div>
-
-        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
         <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
         <script src="js/smooth-scroll.min.js"></script>

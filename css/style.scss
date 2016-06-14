@@ -243,6 +243,7 @@ body {
               margin-right: 3px;
               &::before {
                 background-size: 11px 11px;
+                background-repeat: no-repeat;
                 display: inline-block;
                 margin-right: 3px;
                 margin-bottom: -2px;
@@ -257,7 +258,7 @@ body {
                 background-image: url('../img/html5.svg');
               }
               &::after {
-                content: "HTML5"
+                content: "HTML5";
               }
             }
             .css {
@@ -266,7 +267,7 @@ body {
                 background-image: url('../img/css3.svg');
               }
               &::after {
-                content: "CSS3"
+                content: "CSS3";
               }
             }
             .js {
@@ -275,7 +276,7 @@ body {
                 background-image: url('../img/javascriptdark.svg');
               }
               &::after {
-                content: "JavaScript"
+                content: "JavaScript";
               }
             }
             .jquery {
@@ -284,7 +285,7 @@ body {
                 background-image: url('../img/jquery.svg');
               }
               &::after {
-                content: "jQuery"
+                content: "jQuery";
               }
             }
             .angular {
@@ -293,7 +294,7 @@ body {
                 background-image: url('../img/angularjs.svg');
               }
               &::after {
-                content: "AngularJS"
+                content: "AngularJS";
               }
             }
             .mongo {
@@ -302,7 +303,7 @@ body {
                 background-image: url('../img/mongodb.svg');
               }
               &::after {
-                content: "MongoDB"
+                content: "MongoDB";
               }
             }
             .node {
@@ -311,7 +312,7 @@ body {
                 background-image: url('../img/nodejs.svg');
               }
               &::after {
-                content: "Node.js"
+                content: "Node.js";
               }
             }
             .ruby {
@@ -320,7 +321,7 @@ body {
                 background-image: url('../img/ruby.svg');
               }
               &::after {
-                content: "Ruby"
+                content: "Ruby";
               }
             }
             .rails {
@@ -329,7 +330,7 @@ body {
                 background-image: url('../img/rails.svg');
               }
               &::after {
-                content: "Ruby on Rails"
+                content: "Ruby on Rails";
               }
             }
             .postgresql {
@@ -338,7 +339,22 @@ body {
                 background-image: url('../img/postgresql.svg');
               }
               &::after {
-                content: "PostgreSQL"
+                content: "PostgreSQL";
+              }
+            }
+            .php {
+              background-color: #fff;
+              padding-top: 0;
+              color: $dark-gray;
+              &::before {
+                background-size: 20px 20px;
+                width: 20px;
+                height: 20px;
+                margin-bottom: -6.5px;
+                background-image: url('../img/php-plain.svg');
+              }
+              &::after {
+                content: "PHP";
               }
             }
             .express {
@@ -354,7 +370,7 @@ body {
               }
             }
             li.dark {
-              color: #2D2E2A;
+              color: $dark-gray;
             }
           } // End of ul.techtags
         }
@@ -364,17 +380,19 @@ body {
 
   #contact {
     ul {
-      margin-bottom: 50px;
+      padding-top: 80px;
+      padding-left: 0;
+      margin-bottom: 75px;
+      height: 272px;
       li {
-        padding: 65px 0;
         list-style: none;
+        margin-bottom: 50px;
         @include span-columns(3);
         @include media($sm-md) {
           @include span-columns(2);
           @include omega(2n);
           margin-bottom: 25px;
         }
-        margin-bottom: 50px;
         a {
           position: relative;
           display: inline-block;
