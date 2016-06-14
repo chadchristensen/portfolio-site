@@ -330,9 +330,9 @@ body {
 
   #contact {
     ul {
-      padding: 0;
       margin-bottom: 50px;
       li {
+        padding: 65px 0;
         list-style: none;
         @include span-columns(3);
         @include media($sm-md) {

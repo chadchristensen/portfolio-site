@@ -676,9 +676,9 @@ body {
         body #projects .project .project-info .project-tech ul.techtags li.dark {
           color: #2D2E2A; }
   body #contact ul {
-    padding: 0;
     margin-bottom: 50px; }
     body #contact ul li {
+      padding: 65px 0;
       list-style: none;
       float: left;
       display: block;
